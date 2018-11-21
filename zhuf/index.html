@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>兰州大学住房管理处</title>
+		<link href="Theme/default/style.css" rel="stylesheet">
+		<link href="Theme/default/bootstrap.css" rel="stylesheet">
+		<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/superslide.2.1.js"></script>
+<!--		<script type="text/javascript" src="js/iconfont.js"></script>-->
+	</head>
+
+	<body>
+		<!--头部及导航开始-->
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<!--logo部分开始-->
+				<div class="header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+					<div class="col-sm-9">
+						<a class="navbar-brand" href="#">
+							<img class="bglogo" src="theme/default/logo.png"></a>
+					</div>
+					<div class="col-sm-3 padg">
+						<div class="fastlink">
+							<a href="http://www.lzu.edu.cn" class="linkbg1">兰大首页</a>
+							<a href="#" class="linkbg2">ENGLISH</a>
+						</div>
+						<div class="search">
+							<div class="slink">
+								<form name="form">
+									<input type="submit" value="" class="btnSearch" />
+									<input type="text" value="请输入关键字" />
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--logo部分结束-->
+			</div>
+			<!--导航开始-->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<div class="container">
+					<div class="row">
+
+						<ul class="nav navbar-nav navbar-left">
+
+							<li class="dropdown open">
+								<a href="sub.html" target="sub">首页</a>
+								<ul class="dropdown-menu">
+								</ul>
+							</li>
+
+							<li class="dropdown">
+								<a href="#">部门概括</a>
+
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#"><span>办公室概况</span></a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="dropdown">
+								<a href="#">规章制度</a>
+							</li>
+
+							<li class="dropdown">
+								<a href="#">服务指南</a>
+							</li>
+
+							<li class="dropdown">
+								<a href="#">支部建设</a>
+							</li>
+
+							<li class="dropdown">
+								<a href="#">下载中心</a>
+							</li>
+
+							<li class="dropdown">
+								<a href="#">联系我们</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--导航结束-->
+		</nav>
+
+		<!--滚动图片-->
+		<div class="slider" style="z-index:-999;">
+			<div class="bd">
+				<ul>
+					<li><img src="Theme/default/banner_1.jpg" /></li>
+					<li><img src="Theme/default/banner_2.jpg" /></li>
+					<li><img src="Theme/default/banner_3.jpg" /></li>
+				</ul>
+			</div>
+			<div class="pnBtn prev"> <span class="blackBg"></span> </div>
+			<div class="pnBtn next"> <span class="blackBg"></span> </div>
+		</div>
+		<script>
+			jQuery(".slider .bd li").first().before(jQuery(".slider .bd li").last());
+			jQuery(".slider").hover(function() {
+				jQuery(this).find(".arrow").stop(true, true).fadeIn(16000)
+			}, function() {
+				jQuery(this).find
+
+				(".arrow").fadeOut(16000)
+			});
+			jQuery(".slider").slide({
+				titCell: ".hd ul",
+				mainCell: ".bd ul",
+
+				effect: "leftLoop",
+				autoPlay: true,
+				vis: 3,
+				autoPage: true,
+				trigger: "click"
+			});
+		</script>
+		<div class="clear blank20"></div>
+		<div class="container">
+			<div class="row">
+				<div class="tit">
+					<a href="#">more</a>
+					<h3>工作动态
+			<svg class="icon" aria-hidden="true">
+				<use xlink:href="#icon-dt"></use>
+			</svg>
+		</h3>
+				</div>
+				<div class="col-md-6 col-xl-6 col-lg-6 ">
+
+					<div class="news">
+
+						<div id="myCarousel" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								<li data-target="#myCarousel" data-slide-to="1"></li>
+								<li data-target="#myCarousel" data-slide-to="2"></li>
+								<li data-target="#myCarousel" data-slide-to="1"></li>
+								<li data-target="#myCarousel" data-slide-to="2"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="item active">
+									<img src="Theme/default/1.jpg" alt="">
+									<div class="carousel-caption">标题 1</div>
+								</div>
+								<div class="item">
+									<img src="Theme/default/2.jpg" alt="">
+									<div class="carousel-caption">标题 1</div>
+								</div>
+								<div class="item">
+									<img src="Theme/default/3.jpg" alt="">
+									<div class="carousel-caption">标题 1</div>
+								</div>
+							</div>
+							<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only"></span>
+							</a>
+							<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only"></span>
+							</a>
+						</div>
+
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="col-md-6 col-xl-6 col-lg-6 ">
+					<div class="hotnews">
+						<div class="col-md-12 col-xl-12 col-lg-12 m-20">
+							<div class="top-news">
+								<h3>
+				<a href="#">习近平：自主创新推进网络强国建设</a>
+			</h3>
+								<p>新华社北京4月21日电（记者张晓松、朱基钗）全国网络安全和信息化工作会议20日至21日在北京召开。中共中央总...</p>
+								<div class="clear"></div>
+								<ul>
+									<li>
+										<a href="#"><span>(2017-06-01)</span>通信网络中心多举措落实学校作风建设年活动</a>
+									</li>
+									<li>
+										<a href="#"><span>(2017-06-01)</span>通信网络中心多举措落实学校作风建设年活动</a>
+									</li>
+									<li>
+										<a href="#"><span>(2017-06-01)</span>通信网络中心多举措落实学校作风建设年活动</a>
+									</li>
+									<li>
+										<a href="#"><span>(2017-06-01)</span>通信网络中心多举措落实学校作风建设年活动</a>
+									</li>
+									<li>
+										<a href="#"><span>(2017-06-01)</span>通信网络中心多举措落实学校作风建设年活动</a>
+									</li>
+									<li>
+										<a href="#"><span>(2017-06-01)</span>通信网络中心多举措落实学校作风建设年活动</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-xl-6 col-lg-6">
+					<div class="notice h300">
+						<div class="title">
+							<a href="#">more</a>
+							<h3>
+      	通知公告
+			<svg class="icon" aria-hidden="true">
+				<use xlink:href="#icon-notice"></use>
+			</svg>
+      	</h3>
+						</div>
+						<ul class="list">
+							<li>
+								<span>09-13</span>
+								<a href="#">
+									关于成立兰州大学民族宗教工作领导小组的通知
+								</a>
+							</li>
+							<li><span>09-10</span>
+								<a href="#" target="_new">关于印发《兰州大学庆祝2018年教师节暨“师德文化传承月”活...</a>
+							</li>
+							<li><span>09-10</span>
+								<a href="#" target="_new">关于学习宣传贯彻执行《中国共产党纪律处分条例》的通知</a>
+							</li>
+							<li><span>09-10</span>
+								<a href="#" target="_new">关于向从事教育工作30年教职工颁发荣誉证书的决定</a>
+							</li>
+							<li><span>09-10</span>
+								<a href="#" target="_new">关于做好2018年教职工荣休工作的通知</a>
+							</li>
+							<li><span>09-10</span>
+								<a href="#" target="_new">关于李勇进等同志任职的通知</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6 col-xl-6 col-lg-6">
+					<div class="zhin h300">
+						<div class="title">
+							<a href="#">more</a>
+							<h3>
+      		服务指南
+      		<svg class="icon" aria-hidden="true">
+				<use xlink:href="#icon-zn"></use>
+			</svg>
+      	</h3>
+						</div>
+						<ul class="list">
+							<li><span>(2018-09-13)</span>
+								<a href="#" target="_new">关于做好2018年研究生国家奖学金、学业奖学金评定工作的通知...</a>
+							</li>
+							<li><span>(2018-09-12)</span>
+								<a href="#" target="_new">关于做好2019年推荐优秀应届本科毕业生免试攻读研究生工作的...</a>
+							</li>
+							<li><span>(2018-09-12)</span>
+								<a href="#" target="_new">关于印发《兰州大学推荐2019届优秀本科毕业生免试攻读研究生...</a>
+							</li>
+							<li><span>(2018-09-10)</span>
+								<a href="#" target="_new">关于成立兰州大学绿色材料研发中心的通知</a>
+							</li>
+							<li><span>(2018-09-10)</span>
+								<a href="#" target="_new">关于开展省级重点学科遴选新增与动态调整工作的通知</a>
+							</li>
+							<li><span>(2018-09-06)</span>
+								<a href="#" target="_new">关于邬光剑职务聘任的通知</a>
+							</li>
+							<li><span>(2018-09-10)</span>
+								<a href="#" target="_new">关于开展省级重点学科遴选新增与动态调整工作的通知</a>
+							</li>
+							<li><span>(2018-09-06)</span>
+								<a href="#" target="_new">关于邬光剑职务聘任的通知</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clear blank20"></div>
+		<div class="container">
+			<div class="row">
+				<div class="tits">
+					<a href="#">more</a>
+					<h3>政策法规
+			<svg class="icon" aria-hidden="true">
+				<use xlink:href="#icon-law"></use>
+			</svg>
+		</h3>
+				</div>
+				<div class="col-md-6 col-xl-6 col-lg-6">
+					<div class="law bg">
+						<div class="title">
+							<a href="#">住房管理</a>
+						</div>
+						<ul class="list">
+							<li><span>(2018-09-13)</span>
+								<a href="#" target="_new">关于成立兰州大学民族宗教工作领导小组的通知</a>
+							</li>
+							<li><span>(2018-09-10)</span>
+								<a href="#" target="_new">关于印发《兰州大学庆祝2018年教师节暨“师德文化传承月”活...</a>
+							</li>
+							<li><span>(2018-09-06)</span>
+								<a href="#" target="_new">关于学习宣传贯彻执行《中国共产党纪律处分条例》的通知</a>
+							</li>
+							<li><span>(2018-09-03)</span>
+								<a href="#" target="_new">关于向从事教育工作30年教职工颁发荣誉证书的决定</a>
+							</li>
+							<li><span>(2018-08-15)</span>
+								<a href="#" target="_new">关于做好2018年教职工荣休工作的通知</a>
+							</li>
+							<li><span>(2018-08-13)</span>
+								<a href="#" target="_new">关于李勇进等同志任职的通知</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6 col-xl-6 col-lg-6">
+					<div class="build bg">
+						<div class="title icon-4">
+							<a href="#">住宅小区建设与管理</a>
+						</div>
+						<ul class="list">
+							<li><span>(2018-09-13)</span>
+								<a href="#" target="_new">关于做好2018年研究生国家奖学金、学业奖学金评定工作的通知...</a>
+							</li>
+							<li><span>(2018-09-12)</span>
+								<a href="#" target="_new">关于做好2019年推荐优秀应届本科毕业生免试攻读研究生工作的...</a>
+							</li>
+							<li><span>(2018-09-12)</span>
+								<a href="#" target="_new">关于印发《兰州大学推荐2019届优秀本科毕业生免试攻读研究生...</a>
+							</li>
+							<li><span>(2018-09-10)</span>
+								<a href="#" target="_new">关于成立兰州大学绿色材料研发中心的通知</a>
+							</li>
+							<li><span>(2018-09-10)</span>
+								<a href="#" target="_new">关于开展省级重点学科遴选新增与动态调整工作的通知</a>
+							</li>
+							<li><span>(2018-09-06)</span>
+								<a href="#" target="_new">关于邬光剑职务聘任的通知</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="clear blank20"></div>
+			</div>
+		</div>
+		<div class="clear blank20"></div>
+		<div class="container">
+			<div class="row">
+				<div class="link">
+					<div class="links">
+						<a href="#" class="link_1"></a>
+						<a href="#" class="link_2"></a>
+						<a href="#" class="link_3"></a>
+						<a href="#" class="link_4"></a>
+						<a href="#" class="link_5"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clear blank20"></div>
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3 col-md-3">
+						<div class="box">
+							<a href="http://bszs.conac.cn/sitename?method=show&id=5701B3C7A3E46C8FE053022819AC1458" target="_blank"><img src="theme/default/sy-logo.png" /></a>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-6">
+						<p>单位地址：甘肃省兰州市天水南路222号兰州大学贵勤楼 住房管理处
+						</p>
+						<p>联系电话：0931-8915350 传真：0931-8915251 电子邮箱：iie@lzu.edu.cn</p>
+
+					</div>
+					<div class="col-sm-3 col-md-3">
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
